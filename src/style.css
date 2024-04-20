@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: honeydew;
+}
+
+.content_block {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.content_block .robo_card {
+    width: 42%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.logo {
+    background: #fff url(../img/logo.png) no-repeat center center;
+    background-size: contain;
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    padding: 15px;
+    margin: auto;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+select {
+    width: 100%;
+}
+
+.custom-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 57px;
+    padding: 10px 38px 10px 16px;
+    background: #fff url("../img/chevron-down.svg") no-repeat right 16px center;
+    background-size: 20px;
+    transition: border-color .1s ease-in-out, box-shadow .1s ease-in-out;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.custom-select:hover {
+    border: 1px solid #999;
+}
+
+.custom-select:focus {
+    border: 1px solid #999;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .2);
+    outline: none;
+}
+
+/* remove default arrow in IE */
+select::-ms-expand {
+    display: none;
+}
+
+
+a {
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.custom-select {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.6rem;
+}
