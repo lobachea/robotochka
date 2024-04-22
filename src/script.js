@@ -6,7 +6,7 @@ let robots = []
 
 const renderItems = (data) => {
     data.forEach(item => {
-        const { id, title, size, weight, teacher, team } = item
+        const { id, title, weight, speed, weapon } = item
 
         let list_elem = document.createElement('option')
         list_elem.setAttribute('value', id)
@@ -18,12 +18,11 @@ const renderItems = (data) => {
         list_elem2.textContent = title
         select2.append(list_elem2)
 
-        str1 = `<h3>Характеристики: ${title}</h3>
+        str1 = `<h3>${id} ${title}</h3>
         <ul>
-            <li>Размер: ${size}</li>
-            <li>Вес: ${weight}</li>
-            <li>Команда: ${team}</li>
-            <li>Педагог: ${teacher}</li>
+            <li>Вес: ${weight} гр.</li>
+            <li>Скорость: ${speed} км/ч</li>
+            <li>Оружие: ${weapon}</li>
         </ul>`
         robots[id] = str1
     })
